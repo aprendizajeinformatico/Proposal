@@ -10,7 +10,9 @@ import rojerusan.RSNotifyAnimated;
 
 /**
  *
- * @author A-Informático
+ * @author Aprendizaje-Informático
+ * @version 1.0
+ * @see RSNotifyAnimated
  */
 public class View extends javax.swing.JFrame {
 
@@ -84,10 +86,14 @@ public class View extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNoMouseEntered
+       //Calculamos la posicion del boton NO en el eje X y en el eje Y
        int buttonNoWidth = jPanelButtons.getWidth()-btnNo.getWidth();
        int buttonNoHeight = jPanelButtons.getHeight()-btnNo.getHeight();
+       //Generamos un numero random para ir moviendo el boton NO en base a estos numeros 
+       //aleatorios
        int x = (int)Math.round(buttonNoWidth*Math.random());
        int y = (int)Math.round(buttonNoHeight*Math.random());
+       //Movemos el boton a la posición random que acabamos de generar
        btnNo.setLocation(x, y);
     }//GEN-LAST:event_btnNoMouseEntered
 
